@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>LOGIN-PAGE</title>
+	 <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="Bootstrap/js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+	<style>
+	body{
+		background-color: linen;
+	}
+	#drop{
+		display: relative;
+	}
+	#dropped {
+		display: none;
+	}
+	#drop:hover #dropped {
+		display: block;
+		background-color: orange;
+		color: orange;
+		text-decoration: none;
+		color: black;
+	}
+	#nav{
+		display: relative;
+	}
+	#nav:hover{
+		display: inline-block;
+		
+	}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="botton" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+		
+	</button>
+	<a href="index.html">HOME</a>
+	
+</div>
+<div class="collapse navbar-collapse" id="Mynav">
+<ul class="nav navbar-nav" id="nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="aboutus.html">ABOUT US</a></li>
+	<li><a href="services.html>SERVICES</a></li>
+	<li><a href="login.html">MY ACCOUNT</a></li>
+	<!-- <ul id="dropped">
+		<li><a href="#">Register</a></li>
+		<li><a href="#">Login</a></li>
+	</ul> -->
+	<li><a href="#">ADMIN</a></li>
+</ul>	
+</div>	
+</div>	
+</nav>
+<img style="width:100%;margin-top:50px" src="img2.jpeg">
+<div class="col-md-6 col-md-offset-3">
+	<form action="login.php" method="post">
+		<table class="table table-bordered" style="width:100%">
+			<tr>
+				<th><center>LOGIN HERE</center></th>
+			</tr>
+			<tr>
+				<td>
+					USERNAME:<span class="ghyphicon ghyphicon-user"></span><input style="text-align:center" type="text" name="" class="form-control">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				PASSWORD:<span></span><input style="text-align:center" type="password"  name="" class="form-control">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="background-color:black;color:orange;margin-left:200px;padding:10px;border-radius:10px" type="submit" value="Login" name=""></td>
+			</tr>
+			<tr>
+				<td><a href="#">Forget password</a></td>
+			</tr>
+			<tr>
+				<td colspan="2"><a href="register.html">Not a user,Register now</a></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

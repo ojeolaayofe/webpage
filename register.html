@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>REGISTER</title>
+	 <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=1>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="Bootstrap/js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+	<style>
+	body{
+		background-color: #84B74D;
+	}
+	#drop{
+		display: relative;
+	}
+	#dropped {
+		display: none;
+	}
+	#drop:hover #dropped {
+		display: block;
+		background-color: orange;
+		color: orange;
+		text-decoration: none;
+		color: black;
+	}
+	#nav{
+		display: relative;
+	}
+	#nav:hover{
+		display: inline-block;;
+	}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="botton" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+		
+	</button>
+	<a href="#">WRAGBY</a>
+	
+</div>
+<div class="collapse navbar-collapse" id="Mynav">
+<ul class="nav navbar-nav" id="nav">
+	<li><a href="index.html">HOME</a></li>
+	<li><a href="aboutus.html">ABOUT US</a></li>
+	<li><a href="services.html">SERVICES</a></li>
+	<!-- <li id="drop"><a href="login.html">MY ACCOUNT<span></span></a> -->
+	<!-- <ul id="dropped">
+		<li><a href="#">Register</a></li>
+		<li><a href="#">Login</a></li>
+	</ul> -->
+	<!-- </li>
+	<li><a href="#">ADMIN</a></li> -->
+</ul>	
+</div>	
+</div>	
+</nav>
+<img style="width:100%;margin-top:50px" src="img2.jpeg">
+<div class="col-md-6">
+	<form action="reg.php" method="post">
+	<table width="100%" style="text-align: center;">
+		<tr>
+			<th style="color:#84B74D;font-family:cursive"><center>REGISTER HERE</center></th>
+		</tr>
+		<tr>
+			<td>
+				NAME:<input type="text" name="firstn" class="form-control" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				PHONE:<input type="text" class="form-control" name="lastn" required>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				EMAIL ADDRESS:<input type="email" class="form-control" name="email" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				NEXT OF KIN :<input type="text" class="form-control" name="phone" required>
+			</td>
+		</tr>
+		
+		
+		<tr>
+		<td>
+			DATE OF BIRTH: <input type="date" name="dob" class="form-control" required>
+		</td>
+		</tr>
+		
+		
+		<tr>
+		<td>
+			LEVEL: <input type="text" name="level" class="form-control" required="">
+		</td>
+		</tr>
+		<tr>
+		<td>
+			MONTHLYPAY: 
+			<select class="form-control" name="Monthlypay">
+				<option>select your earning</option>
+				<option>#100,000</option>
+				<option>#150,000</option>
+				<option>#200,000</option>
+			</select>
+		</td>
+		<tr>
+		<td>
+			DEPARTMENT: 
+			<select class="form-control" name="Department">
+				<option>select your Department</option>
+				<option>IT</option>
+				<option>Sales & Marketing</option>
+				<option>Research and Development</option>
+				<option>Training</option>
+			</select>
+		</td>
+		<tr>
+		<td>
+			MANAGER: 
+			<select class="form-control" name="manager">
+				<option>select your manager</option>
+				<option>IT Manager</option>
+				<option>S&M Manager</option>
+				<option>R&D Manager</option>
+				<option>Trainng Manager</option>
+			</select>
+		</td>
+		<tr>
+			<td colspan="2"><input style="color:orange;background-color:black;margin-left:200px;padding:5px;margin-top:15px;border-radius:10px" type="submit" id="submit" value="register" name=""></td>
+			<a href="loginpage.html">Goto the login page</a>
+		</tr>
+	</table>
+	</form>
+</div>
+<div class="col-md-6" <!--  -->>
+
+</div>
+</div>
+</body>
+</html>

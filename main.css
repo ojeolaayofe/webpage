@@ -1,0 +1,22 @@
+body{
+		background-color: linen;
+	}
+	#drop{
+		display: relative;
+	}
+	#dropped {
+		display: none;
+	}
+	#drop:hover #dropped {
+		display: block;
+		background-color: orange;
+		color: orange;
+		text-decoration: none;
+		color: black;
+	}
+	#nav{
+		display: relative;
+	}
+	#nav:hover{
+		display: inline-block;;
+	}
